@@ -5,8 +5,8 @@
   --features-text-color: #757575;
   --accent-text-color: #2196f3;
   --portfolio-btn-color: #212121;
-  --first-bg-coor: #FFFFFF;
-  --second-bg-coor: #2F303A;
+  --first-bg-coor: #ffffff;
+  --second-bg-coor: #2f303a;
 }
 
 p,
@@ -36,6 +36,10 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -122,13 +126,19 @@ body {
 
 /* -----------------------Hero----------------------- */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  min-height: 600px;
+  text-align: center;
   background: var(--second-bg-coor);
 }
 .hero-title {
+  margin-bottom: 30px;
+  min-width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -136,9 +146,10 @@ body {
 
 .hero-btn {
   display: inline-block;
-  width: 200px;
-height: 50px;;
   border-radius: 4px;
+  padding: 10px 32px;
+
+  min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
 
@@ -148,7 +159,6 @@ height: 50px;;
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
@@ -162,7 +172,12 @@ height: 50px;;
 
 /* ----------------------Features---------------------- */
 
+.features {
+  padding: 94px 0;
+}
 .features-title {
+margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -180,6 +195,9 @@ height: 50px;;
 
 /* ----------------------Service---------------------- */
 
+.service-title {
+  margin-bottom: 50px;
+}
 /* ----------------------Team---------------------- */
 
 .team {
@@ -221,7 +239,6 @@ height: 50px;;
 .footer-address {
   color: #ffffff;
 }
-
 
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
