@@ -30,16 +30,22 @@ body {
   background-color: var(--first-bg-coor);
 }
 
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid blueviolet;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
-}
-
-img {
-  display: block;
 }
 
 .container {
@@ -80,6 +86,10 @@ img {
 }
 
 /* -----------------------Header----------------------- */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-text {
   font-family: "Raleway";
   font-style: normal;
@@ -172,11 +182,8 @@ img {
 
 /* ----------------------Features---------------------- */
 
-.features {
-  padding: 94px 0;
-}
 .features-title {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -204,7 +211,29 @@ margin-bottom: 10px;
   background: #f5f4fa;
 }
 
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.team-item {
+  /* border: 1px solid green; */
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -227,6 +256,9 @@ margin-bottom: 10px;
 }
 
 .footer-text {
+  padding-top: 60px;
+  margin-bottom: 20px;
+
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -236,11 +268,17 @@ margin-bottom: 10px;
   color: #ffffff;
 }
 
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .footer-address {
   color: #ffffff;
 }
 
 .footer-contact {
+  padding-bottom: 60px;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -250,7 +288,9 @@ margin-bottom: 10px;
 }
 
 /* -----------------Portfolio-button------------------ */
-
+.btn-list {
+  margin-bottom: 50px;
+}
 .btn-primaty {
   font-family: inherit;
   font-weight: 500;
@@ -276,6 +316,8 @@ margin-bottom: 10px;
 /* -----------------Portfolio------------------------- */
 
 .portfolio-title {
+  margin-bottom: 4px;
+
   font-style: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -290,4 +332,18 @@ margin-bottom: 10px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-main-color);
+}
+
+.portfolio-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0;
+}
+
+.portfolio-item {
+  background: var(--first-bg-coor);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
