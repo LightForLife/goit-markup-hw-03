@@ -124,7 +124,7 @@ img {
   margin-right: 50px;
 }
 
-.header-text {
+.header-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -160,6 +160,10 @@ img {
 }
 
 .header-info {
+display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -250,6 +254,9 @@ img {
 }
 
 /* ----------------------Service---------------------- */
+.section.service {
+  padding-top: 0;
+}
 
 .service-title {
   margin-bottom: 50px;
@@ -317,11 +324,14 @@ img {
 
 /* ----------------------Footer---------------------- */
 .footer {
+padding-top: 60px;
+padding-bottom: 60px;
+
   background: var(--second-bg-coor);
 }
 
-.footer-text {
-  padding-top: 60px;
+.footer-logo {
+  display: block;
   margin-bottom: 20px;
 
   font-family: "Raleway";
@@ -346,9 +356,11 @@ img {
 }
 
 .footer-contact {
-  padding-bottom: 60px;
-
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-text {
+  display: block;
 }
 
 .contact-text:hover,
