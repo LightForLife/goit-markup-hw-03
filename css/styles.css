@@ -139,7 +139,7 @@ img {
 }
 
 .header-link {
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -160,7 +160,7 @@ img {
 }
 
 .header-info {
-display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -178,11 +178,24 @@ display: block;
 
 /* -----------------------Hero----------------------- */
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+
   padding-top: 200px;
   padding-bottom: 200px;
-  min-height: 600px;
   text-align: center;
-  background: var(--second-bg-coor);
 }
 .hero-title {
   margin-bottom: var(--main-flex-gap);
@@ -197,7 +210,6 @@ display: block;
 }
 
 .hero-btn {
-  display: inline-block;
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
@@ -233,6 +245,35 @@ display: block;
   width: calc(100% / 4 - 30px);
   margin-left: var(--main-flex-gap);
   max-width: 270px;
+}
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-title {
@@ -320,12 +361,43 @@ display: block;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-main-color);
+  margin-bottom: 16px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-item + .team-soc-item {
+  margin-left: 10px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+/* .team-soc-icon {
+  fill: currentColor;
+} */
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
 }
 
 /* ----------------------Footer---------------------- */
 .footer {
-padding-top: 60px;
-padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background: var(--second-bg-coor);
 }
